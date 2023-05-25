@@ -1,9 +1,17 @@
 import React from "react";
-// import Footer from "./Footer";
-import Navbar from "./Navbar/Navbar";
+import Layout from "./Layout";
+import Home from "./Characters/Home";
+
 
 const App = () => {
-  return <Navbar />;
+  return (
+    <>
+      <Layout>
+   
+        <Home />
+      </Layout>
+    </>
+  );
 };
 
 export default App;

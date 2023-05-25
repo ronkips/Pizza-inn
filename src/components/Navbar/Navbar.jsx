@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className={`container ${style.NavContainer}`}>
         <div className={style.NavIcon}>
           <Image
-            className={style.NavIcon}
+            // className={style.NavIcon}
             src={logo}
             alt="pizza man"
             width={80}
