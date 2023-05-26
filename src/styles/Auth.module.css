@@ -1,0 +1,83 @@
+/* input */
+
+.Input {
+  background-color: #ddd;
+  display: block;
+  width: 80%;
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none !important;
+  transition: 0.1s;
+  left: 60px;
+  top: 160px;
+  position: relative;
+}
+
+.Input:hover {
+  background-color: #bbb;
+}
+
+.Input:focus {
+  background-color: #888;
+}
+
+.Input:focus::placeholder {
+  color: white;
+}
+
+.Btn {
+  /* position: relative; */
+  background-color: #5a2ff3;
+  color: white;
+  border: none;
+  outline: none !important;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: large;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+  left: 60px;
+  position: relative;
+  top: 210px;
+}
+.Btn:hover {
+  background-color: blue;
+  filter: drop-shadow(0 0 8px #724cf9);
+}
+
+/* input */
+.Span {
+  font-weight: bold;
+  margin-top: 2px;
+  position: relative;
+  left: 60px;
+  top: 200px;
+}
+.PageBody {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  /* padding-top: 5px; */
+  /* margin-top: 10px; */
+  /* padding-top: 2px; */
+}
+/* page title */
+.PageTitle {
+  position: relative;
+  font-weight: bold;
+  top: 100px;
+  text-transform: uppercase;
+  left: 100px;
+}
+
+.HR {
+  position: relative;
+  width: 77%;
+  top: 110px;
+  background-color: #000;
+  height: 2px;
+  left: 90px;
+}

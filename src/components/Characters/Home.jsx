@@ -15,6 +15,7 @@ const Home = () => {
           <button className={style.Btn}>Order Now</button>
         </Link>
       </div>
+      <div className={style.LandscapeOverlay} />
     </>
   );
 };
