@@ -65,3 +65,10 @@ body {
   height: 2px;
   left: 90px;
 }
+.navlink {
+  color: blueviolet;
+  text-decoration: underline;
+}
+.navlink:hover {
+  color: blue;
+}

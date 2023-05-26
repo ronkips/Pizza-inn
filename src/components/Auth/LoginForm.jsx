@@ -22,8 +22,8 @@ const LoginForm = () => {
           type="password"
         />
         <p className={style.Span}>
-          Not yet register
-          <Link href={"/register"}>Register</Link>
+          Not yet register? {""}
+          <Link className="navlink" href={"/register"}>Register</Link>
         </p>
         <button className={style.Btn}>Login</button>
       </form>

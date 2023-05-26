@@ -33,7 +33,9 @@ const Register = () => {
         />
         <p className={style.Span}>
           Already registered? {""}
-          <Link href={"/login"}>Login</Link>
+          <Link className="navlink" href={"/login"}>
+            Login
+          </Link>
         </p>
         <button className={style.Btn}>Register</button>
       </form>
