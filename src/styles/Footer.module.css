@@ -15,22 +15,23 @@
 }
 
 .FooterSection {
-  width: 50%;
+  width: 60%;
+  margin-top: 10px;
 }
 
 .LinksContainer {
-  margin-right: auto;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
 }
 
 .TextLink {
   color: #724cf9 !important;
-  margin: 8px 0px;
+  margin: 6px 0px;
   font-weight: 500;
   position: relative;
   width: max-content;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .TextLink::after {
@@ -72,7 +73,7 @@
 }
 
 .Copyright {
-  left: -500px;
+  /* left: -500px; */
   height: 10px;
   width: fit-content;
   position: relative;

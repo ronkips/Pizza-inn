@@ -1,21 +1,27 @@
 import React from "react";
 import style from "../styles/Footer.module.css";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const Footer = (props) => {
-  const { location, cart } = props;
+const Footer = () => {
+  // const { location, cart } = props;
   return (
-    <div className={style.Footer}>
+    <footer className={style.Footer}>
       <div className={style.FooterSection}>
         <h2 className={style.H2}>Company</h2>
         <div className={style.LinksContainer}>
           <div className={`${style.Link} ${style.TextLink}`}>About Us</div>
           <div className={`${style.Link} ${style.TextLink}`}>FAQ</div>
-          <a
+          <Link
             className={`${style.Link} ${style.TextLink}`}
-            // href="mailto:no-mail@email.com"
+            href="mailto:no-mail@email.com"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -37,49 +43,50 @@ const Footer = (props) => {
           <div className={`${style.Link} ${style.TextLink}`}>Disclaimer</div>
         </div>
       </div>
-
-      <h2 className={style.H2}>Social Media</h2>
-      <div className={style.Row}>
-        <a
-          className={style.Link}
-          href="https://www.facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className={`${style.SocialMediaBtn} ${style.FaceBook}`}>
-            <i className="fa fa-facebook" aria-hidden="true" />
-          </div>
-        </a>
-        <a
-          className={style.Link}
-          href="https://twitter.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className={`${style.SocialMediaBtn} ${style.Twitter}`}>
-            <i className="fa fa-twitter" aria-hidden="true" />
-          </div>
-        </a>
-        <a
-          className={style.Link}
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className={`${style.SocialMediaBtn} ${style.Instagram}`}>
-            <i className="fa fa-instagram" aria-hidden="true" />
-          </div>
-        </a>
-        <a
-          className={style.Link}
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className={`${style.SocialMediaBtn} ${style.Youtube}`}>
-            <i className="fa fa-youtube-play" aria-hidden="true" />
-          </div>
-        </a>
+      <div className={style.FooterSection}>
+        <h2 className={style.H2}>Social Media</h2>
+        <div className={style.Row}>
+          <a
+            className={style.Link}
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={`${style.SocialMediaBtn} ${style.FaceBook}`}>
+              <FontAwesomeIcon icon={faFacebook} aria-hidden="true" />
+            </div>
+          </a>
+          <a
+            className={style.Link}
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={`${style.SocialMediaBtn} ${style.Twitter}`}>
+              <FontAwesomeIcon icon={faTwitter} aria-hidden="true" />
+            </div>
+          </a>
+          <a
+            className={style.Link}
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={`${style.SocialMediaBtn} ${style.Instagram}`}>
+              <FontAwesomeIcon icon={faInstagram} aria-hidden="true" />
+            </div>
+          </a>
+          <a
+            className={style.Link}
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className={`${style.SocialMediaBtn} ${style.Youtube}`}>
+              <FontAwesomeIcon icon={faYoutube} aria-hidden="true" />
+            </div>
+          </a>
+        </div>
       </div>
 
       <div className={`mb-2 ${style.Row}`}>
@@ -88,7 +95,7 @@ const Footer = (props) => {
           Reserved
         </span>
       </div>
-    </div>
+    </footer>
   );
 };
 
