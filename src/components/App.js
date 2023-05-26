@@ -4,6 +4,7 @@ import Home from "./Characters/Home";
 import Spinner from "./Spinner";
 import Login from "./Auth/Login";
 import Register from "./Auth/Register";
+import Menu from "./Menu";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <Layout>
         {/* <Home /> */}
         {/* <Login /> */}
-        <Register />
+        {/* <Register /> */}
+        <Menu />
       </Layout>
     </>
   );

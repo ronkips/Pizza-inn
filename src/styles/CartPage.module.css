@@ -1,0 +1,97 @@
+.Body {
+  position: relative;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-top: 150px;
+  width: 200px;
+  margin-right: 12px;
+  overflow: hidden;
+  left: 1000px;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.ImgHolder {
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+}
+
+.Img {
+  width: 200px;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: 0.2s;
+}
+
+.Body:hover Img {
+  transform: scale(1.2);
+}
+
+.ItemBody {
+  margin-left: 12px;
+  padding: 12px 8px;
+  flex-grow: 1;
+}
+
+.Description {
+  font-size: small;
+  font-weight: lighter;
+  font: italic;
+}
+
+.Price {
+  display: inline-block;
+  width: max-content;
+  left: 5px;
+}
+
+.BtnHolder {
+  margin: auto;
+
+  width: max-content;
+  display: flex !important;
+}
+
+.ItemActionBtn {
+  height: 28px;
+  width: 28px;
+  border-radius: 2px;
+  font-size: 16px;
+  border: none;
+  outline: none !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  transition: 0.1s;
+}
+
+.ItemActionBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.Quantity {
+  width: max-content;
+  font-weight: lighter;
+  margin-left: 1px;
+  margin-top: auto;
+}
+
+.ItemBodyA {
+  flex-direction: row;
+  margin-top: 2px;
+}
+
+/* media queries */
+@media (max-width: 992px) {
+  .ImgHolder {
+    width: 0;
+  }
+}

@@ -33,9 +33,9 @@ const Register = () => {
         />
         <p className={style.Span}>
           Already registered? {""}
-          <Link href={"/components/Auth/Register"}>Login</Link>
+          <Link href={"/login"}>Login</Link>
         </p>
-        <button className={style.Btn}>Login</button>
+        <button className={style.Btn}>Register</button>
       </form>
     </div>
   );
