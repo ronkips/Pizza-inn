@@ -4,10 +4,7 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-  
 }
-
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -42,4 +39,29 @@ body {
   overflow-x: hidden;
 }
 
+.PageBody {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  /* padding-top: 5px; */
+  /* margin-top: 10px; */
+  /* padding-top: 2px; */
+}
+/* page title */
+.PageTitle {
+  position: relative;
+  font-weight: bold;
+  top: 100px;
+  text-transform: uppercase;
+  left: 100px;
+}
 
+.HR {
+  position: relative;
+  width: 77%;
+  top: 110px;
+  background-color: #000;
+  height: 2px;
+  left: 90px;
+}
