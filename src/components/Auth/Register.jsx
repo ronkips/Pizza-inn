@@ -18,18 +18,21 @@ const Register = () => {
           onChangeFunc={setEmail}
           placeholder="Email"
           type="email"
+          required
         />
         <Input
           val={passwordConfirm}
           onChangeFunc={setPasswordConfirm}
           placeholder="Password"
           type="password"
+          required
         />
         <Input
           val={password}
           onChangeFunc={setPassword}
           placeholder="Confirm Password"
           type="password"
+          required
         />
         <p className={style.Span}>
           Already registered? {""}

@@ -14,16 +14,20 @@ const LoginForm = () => {
           onChangeFunc={setEmail}
           placeholder="Email"
           type="email"
+          required
         />
         <Input
           val={password}
           onChangeFunc={setPassword}
           placeholder="Password"
           type="password"
+          required
         />
         <p className={style.Span}>
           Not yet register? {""}
-          <Link className="navlink" href={"/register"}>Register</Link>
+          <Link className="navlink" href={"/register"}>
+            Register
+          </Link>
         </p>
         <button className={style.Btn}>Login</button>
       </form>
