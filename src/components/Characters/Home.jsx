@@ -11,7 +11,7 @@ const Home = () => {
         <Image className={style.Logo} src={logo} alt="pizza man" />
         <h2 className={style.H2}>Pizza Inn Online Ordering</h2>
         <h1 className={style.H1}>Your Yummy Pizza Delivered Fast & Fresh</h1>
-        <Link href={"/menu"}>
+        <Link href={"/"}>
           <button className={style.Btn}>Order Now</button>
         </Link>
       </div>
