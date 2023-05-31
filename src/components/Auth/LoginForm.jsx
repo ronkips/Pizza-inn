@@ -3,7 +3,7 @@ import style from "../../styles/Auth.module.css";
 import Input from "../Input";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import Loader from "../Loader";
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -85,7 +85,7 @@ const LoginForm = () => {
           </Link>
         </p>
         <button className={style.Btn} onClick={handleLogin}>
-          {loading ? "Loading" : "Login"}
+          {loading ? <Loader /> : "Login"}
         </button>
       </form>
     </div>

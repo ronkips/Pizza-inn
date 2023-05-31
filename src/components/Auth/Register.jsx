@@ -3,6 +3,7 @@ import style from "../../styles/Auth.module.css";
 import Input from "../Input";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Loader from "../Loader";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -87,7 +88,7 @@ const Register = () => {
           </Link>
         </p>
         <button className={style.Btn} onClick={handleRegister}>
-          {loading ? "Loading" : "Register"}
+          {loading ? <Loader /> : "Register"}
         </button>
       </form>
     </div>
