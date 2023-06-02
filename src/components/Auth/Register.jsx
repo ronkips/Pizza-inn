@@ -4,6 +4,8 @@ import Input from "../Input";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Loader from "../Loader";
+import { toast } from "react-toastify";
+
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -16,6 +18,16 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+    // Validate password requirements
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).{7,}$/;
+    if (!passwordRegex.test(password)) {
+      setLoading(false);
+      alert(
+        "Password must be at least 7 characters long and contain both letters and numbers."
+      );
+      return;
+    }
     // Prepare the data to be sent in the request body
     const data = {
       email,
@@ -41,15 +53,6 @@ const Register = () => {
         alert("Registration failed");
         setLoading(false);
       }
-      // if (response.message) {
-      //   // Registration successful, handle the response as needed
-      //   console.log("Registration successful");
-      //   return <Link href={"/login"} />;
-      // } else {
-      //   // Registration failed, handle the response as needed
-      //   const errorData = await response.json();
-      //   console.error("Registration failed:", errorData.error_message);
-      // }
     } catch (error) {
       console.error("Error:", error);
     }

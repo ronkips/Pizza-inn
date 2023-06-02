@@ -7,11 +7,7 @@ const Navlinks = (props) => {
   const { user } = props;
   return (
     <div className={style.NavLinkHolder}>
-      {/* <NavLink
-        to="/"
-        className={style.NavLink}
-        activeClassName={style.NavLinkActive}
-      >Home</NavLink> */}
+
       <div className={style.NavLink}>
         <Link href={"/menu"}>Home</Link>
       </div>

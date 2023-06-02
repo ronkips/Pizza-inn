@@ -20,11 +20,10 @@
   left: 0px;
   width: 40vw;
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: blueviolet;
   transition: 0.2s ease-out;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
 }
 
 .SideBarBodyClose {
@@ -40,19 +39,19 @@
 }
 
 /* media queries */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .Backdrop {
     visibility: hidden;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .SideBarBody {
     width: 70vw;
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .SideBarBody {
     width: 70vw;
   }

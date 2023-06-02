@@ -3,6 +3,9 @@ import style from "../../styles/Auth.module.css";
 import Input from "../Input";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+
 import Loader from "../Loader";
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -33,29 +36,12 @@ const LoginForm = () => {
       const data = await res.json();
       if (data.success == true) {
         setLoading(false);
-        alert("Login successful");
+        toast.success("Login successful");
         router.push("/menu");
       } else {
-        alert("Login failed");
+        toast.error("Login failed");
         setLoading(false);
       }
-
-      // console.log("", data);
-
-      // if (response.message) {
-      //   const { token } = await response.json();
-      //   // Save the token to local storage or browser's cookies
-      //   // use localStorage
-      //   localStorage.setItem("token", token);
-      //   // Redirect to a protected route or update the state to indicate successful login
-      //   alert("Login successful");
-      //   console.log("Login successful");
-      // } else {
-      //   // Login failed, handle the response as needed
-      //   const errorData = await response.json();
-      //   console.error("Login failed:", errorData.error_message);
-      //   alert(errorData.error_message);
-      // }
     } catch (error) {
       console.error("Errors:", error);
     }
