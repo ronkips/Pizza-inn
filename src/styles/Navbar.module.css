@@ -8,6 +8,7 @@
   width: 100vw;
   border-radius: 0 0 4px 4px;
 }
+/* 002853 */
 
 .NavContainer {
   display: flex;
@@ -60,6 +61,11 @@
   -webkit-transform: rotate(45deg) translate(-8px, -4px);
   transform: rotate(45deg) translate(-8px, -4px);
 }
+.btn{
+  height: 50px;
+  top: 15px;
+}
+
 
 /* media queries */
 @media screen and (max-width: 992px) {
@@ -74,4 +80,5 @@
   .Toggler:hover .Bar3 {
     margin: 6px 0;
   }
+
 }

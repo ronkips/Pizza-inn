@@ -8,16 +8,14 @@ import SideDrawer from "./SideDrawer";
 
 const Navbar = () => {
   const [sidebarShown, setSidebarShown] = useState(false);
+
   return (
     <div className={style.NavBar}>
       <div className={`container ${style.NavContainer}`}>
         <div className={style.NavIcon}>
-          <Image
-            src={logo}
-            alt="pizza man"
-            width={80}
-          />
+          <Image src={logo} alt="pizza man" width={80} />
         </div>
+
         <div className={style.NavLinkHolder}>
           <Navlinks />
         </div>
